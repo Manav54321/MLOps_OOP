@@ -14,4 +14,27 @@
 
 from oops_proj import chatbook
 
-obj = chatbook()
+user1 = chatbook()
+print(user1.get_id())
+user1.set_id(100)
+print(user1.get_id())
+
+
+
+
+
+# getter and setter methods
+# print(user1.get_name())
+# user1.set_name("Agent X")
+# print(user1.get_name())
+
+# function vs method:
+# lst = [1,2,3]
+
+# # function
+# a1 = len(lst)
+# print(a1)
+
+# # method
+# user1 = chatbook()
+# user1.sendmsg()

@@ -1,24 +1,32 @@
-# initiate a class:
-class Employee:
-    # special method/ magic method/ dunder method: --> constructor
+# initiate a class
+class employee:
+    # special method/magic method/dunder method - constructor
     def __init__(self):
-        print("started executing attributes/data")
+        # print(id(self))
+        # print("Started executing attributes/data")
         self.id = 123
-        self.salry = 5000
+        self.salary = 50000
         self.designation = "SDE"
-        print("attributes/data executed successfully")
+        # print("attributes/data have been initiated")
 
     def travel(self, destination):
-        print("this travel method was called manually")
-        print(f"Employee is now traveling to {destination}")
+        print("This travel method was called manually")
+        print(f"Employee is now travelling to {destination}")
 
-# Create an object/instance of the class:
-sam = Employee()
 
-# Access the attributes of the class:
-# print(sam.designation)
+# create an obj/instance of the class
+sam = employee()
+# sam.name = "Sam Kumar"
+# print(id(sam))
+# print(sam.name)
 
-# Access the methods of the class:
-# sam.travel("Pahelgam")
+shaktiman = employee()
+# print(id(shaktiman))
 
-print(type(sam))
+# printing the attributes
+print(sam.id)
+
+# calling a method
+sam.travel("Pahalgam")
+
+# print(type(sam))
